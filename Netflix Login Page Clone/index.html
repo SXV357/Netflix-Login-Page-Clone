@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <meta http-equiv= "X-UA-Compatible" content = "ie=edge">
+        <title>Netflix Login Page Clone</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $ (function() {
+                $("#visible").click(function() {
+                    $("#invisible").toggleClass("show");
+                });
+            });
+        </script>
+        <link href = "css/all.min.css" rel = "stylesheet" type = "text/css">
+        <link href = "style.css" rel = "stylesheet" type = "text/css">
+        <link href = "htpps://fonts.googleapis.com/css?family=Montserrat" rel = "stylesheet">
+        <link href = "htpps://fonts.googleapis.com/css?family=Roboto" rel = "stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" type = "text/css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <main>
+        <header class = "main-logo">
+            <div class = "logo">
+                <img src = "Netflix-logo-red-black-png-removebg-preview.png" alt = "Netflix Logo">
+            </div>
+        </header>
+        <div class = "login">
+            <header class = "form-field"><h1>Sign In</h1></header>
+            <form class = "main-login-field">
+                <label>Email/Phone</label>
+                <input class = "icon-place" type = "text" placeholder = " &#xf2c2;   Email or phone number" id = "Email/Phone" name = "Email/Phone" required>
+                <label>Password</label>
+                <input class = "icon-place" type = "password" placeholder = " &#xf023;   Password" id = "Password" name = "Password" required>
+                <input type = "button" value = "Sign In">
+            </form>
+            <div class = "footer-1">
+                <div class = "verify">
+                <label class = "verification" for = "remember" style = "float: right">Remember me</label>
+                <input type = "checkbox" id = "remember" name = "remember" checked>
+                </div>
+                <p>Need help?</p></div>
+             <div class = "footer-2">
+                <a href = "#" class = "social"><i class="fa-brands fa-facebook-square"></i></a><h4><a target = "_blank" href = "https://www.facebook.com/">Login with Facebook</a><h4></div>
+                <div class = "footer-3">
+                 <h3>New to Netflix? <a href = "#"><b><a target = "_blank" href = "https://www.netflix.com/">Sign up now</a></b></a></h3>
+                 <p>This page is protected by Google reCAPTCHA to ensure you're not a bot. <a id = "visible" href = "#" class = "extra">Learn more</a></p>
+                 <p id = "invisible" class = "hide">The information collected by Google reCAPTCHA is subject to the Google <a target = "_blank" href = "https://policies.google.com/privacy">Privacy Policy</a> and <a target = "_blank" href = "https://policies.google.com/terms">Terms of Service</a>, and is used for providing, maintaining, and improving the reCAPTCHA service and for general security purposes (it is not used for personalized advertising by Google).</p>
+             </div>
+        </div>
+        <div class = "more-info">
+            <p>Questions? Call 1-844-505-2993</p>
+            <ul>
+                <li><a target = "_blank" href = "https://help.netflix.com/en/node/412">FAQ</a></li>
+                <li><a target = "_blank" href = "https://help.netflix.com/en/">Help Center</a></li>
+                <li><a target = "_blank" href = "https://help.netflix.com/legal/termsofuse">Terms of Use</a></li>
+                <li><a target = "_blank" href =  "https://help.netflix.com/legal/privacy">Privacy</a></li>
+                <li><a target = "popup" href = "https://netflix-cookie-preferences.netlify.app/" onclick = "window.open('https://netflix-cookie-preferences.netlify.app/', 'popup', 'width=1000,height=800');">
+                    Cookie Preferences</a></li>
+                <li><a target = "_blank" href = "https://help.netflix.com/legal/corpinfo">Corporate Information</a></li>
+            </ul>
+            <div class = "lang-selection">
+            <input class = "icon-place" list = "lang" name = "lang" placeholder = "&#xf0ac;">
+            <datalist id = "lang">
+                <option value = "English">
+                <option value = "Español">
+            </datalist>
+            </div>
+        </div>
+        </main>
+    </body>
+</html>

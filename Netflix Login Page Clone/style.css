@@ -1,0 +1,285 @@
+:root{
+    --main-color: rgb(255, 0, 0);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-logo{
+    position: relative;
+    top: 0;
+}
+.logo img{
+    position: absolute;
+    z-index: 1000;
+    opacity: 1;
+}
+.logo{
+    display: flex;
+    justify-content: flex-start;
+}
+body::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-width: 100%;
+    width: 100%;
+    background-image: url("netflix-collection.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+    height: 175vh;
+}
+main{
+    background: rgba(0,0,0,0.6);
+    position: relative;
+    width: 100%;
+    height: 175vh;
+}
+.logo img{
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    max-width: 100%;
+    opacity: 0.9;
+    z-index: 1000;
+    transform: scale(1.25);
+}
+.login{
+    filter: alpha(opacity = 40);
+    background-color: #000;
+    margin: 0 auto;
+    margin-top: 6.25rem;
+    max-width: 100%;
+    height: 100vh;
+    width: 60vh;
+    opacity: 0.75;
+    z-index: 1000;
+    padding-top: 1.2rem;
+}
+.login .form-field{
+    color: #fff;
+    font-family: "Montserrat";
+    font-size: 1.25rem;
+    padding-bottom: 1.5rem;
+}
+.form-field{
+    display: flex;
+    padding-left: 2.85rem;
+}
+.form-field h1{
+    padding-top: 1.5rem;
+}
+.main-login-field label{
+    display: none;
+}
+.main-login-field input::placeholder{
+    padding-left: 0.75rem;
+    color: #fff;
+}
+.main-login-field .verification, p{
+    display: block;
+    color: #fff;
+    font-weight: normal;
+}
+.footer-2 h3{
+    color: #fff;
+}
+.main-login-field{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 50%;
+    gap: 1.2rem;
+}
+.footer-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 1rem;
+    gap: 9rem;
+}
+.footer-1 input[type = "checkbox"], .footer-1 label{
+    order: 1;
+    display: block;
+    color: #fff;
+}
+.main-login-field input[type = text], .main-login-field input[type = password], .main-login-field input[type = button]
+{
+    width: calc(100% + 7.25rem);
+    height: 3rem;
+    border: 1px solid #000;
+    border-radius: 0.25rem;
+}
+.main-login-field input[type = text], .main-login-field input[type = password]{
+    background: #404040;
+}
+.main-login-field input[type = "password"]{
+    margin-top: 0.75rem;
+}
+.main-login-field input[type = button]{
+    background: rgb(255,0,0);
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.main-login-field input[type = "button"]
+{
+    text-align: center;
+    margin-top: 1.5rem;
+}
+.footer-2{
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 2rem;
+    padding-left: 2.85rem;
+    padding-right: 2.2rem;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+    opacity: 0.9;
+}
+.footer-2 h4{
+    color: #909090;
+    display: inline-block;
+    position: relative;
+    left: -1.25rem;
+}
+.footer-2 a{
+    color: #909090;
+    text-decoration: none;
+}
+.footer-2 #invisible a{
+    color: #000080;
+}
+.footer-2 i{
+    color: #000080;
+    background: #fff;
+    height: 2.15vh;
+    border-radius: 0.1rem;
+}
+.footer-3{
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-left: 2.85rem;
+    padding-right: 2.2rem;
+    color: #fff;
+}
+.footer-3 h3{
+    color: #696969;
+}
+.footer-3 p{
+    color: #696969;
+}
+.footer-3 .extra{
+    color: #1F51FF;
+}
+.footer-3 a{
+    color: #fff;
+    text-decoration: none;
+}
+.more-info{
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    max-width: 100%;
+    color: #fff;
+    height: auto;
+    margin-top: 9rem;
+    height: 19rem;
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+}
+.more-info p, .more-info ul li{
+    padding-top: 3.5rem;
+    color: #787878;
+}
+.more-info p{
+    padding-bottom: 1.4rem;
+}
+.more-info ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2rem;
+    row-gap: 1.5rem;
+}
+.more-info ul li{
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+}
+.more-info .lang-selection{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.lang-selection input{
+    padding: 1.25rem 0 0 1.25rem;
+    position: relative;
+    margin-top: 2rem;
+}
+.more-info .lang-selection input::placeholder{
+    color: #000;
+    text-align: center;
+    position: relative;
+    bottom: 0.5rem;
+}
+.fa-caret-down, .fa-globe{
+    color: #696969;
+    font-size: 1.25rem;  
+}
+.icon-place{
+    font-family: "FontAwesome";
+}
+.lang-selection input::placeholder{
+    font-size: 1.5rem;
+}
+.more-info ul a{
+    text-decoration: none;
+    color: #787878;
+}
+/*Media queries*/
+@media screen and (max-width: 860px){
+    .more-info{
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        height: auto;
+        position: absolute;
+        bottom: 0;
+    }
+    .more-info ul{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+    .more-info .lang-selection input{
+        display: flex;
+        justify-content: center;
+    }
+    .fa-caret-down, .fa-globe{
+        position: absolute;
+        bottom: 0.75rem;
+    }
+}
